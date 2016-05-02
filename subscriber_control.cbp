@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="subscriber_control" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/subscriber_control" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="src/" />
+					<Add directory="src" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/subscriber_control" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option host_application="-remoteHost 129.2.177.65" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="src/" />
+					<Add directory="src" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-lroscpp" />
+			<Add option="-lrosconsole" />
+			<Add option="-std=c++0x" />
+			<Add directory="/usr/local/Aria/include" />
+			<Add directory="/opt/ros/groovy/include" />
+			<Add directory="/usr/local/lib/Vicon" />
+		</Compiler>
+		<Linker>
+			<Add option="-lpthread" />
+			<Add option="-ldl" />
+			<Add option="-Wl,--no-as-needed -lrt" />
+			<Add library="/opt/ros/groovy/lib/librosconsole.so" />
+			<Add library="/opt/ros/groovy/lib/librostime.so" />
+			<Add library="/opt/ros/groovy/lib/librobot_state_publisher_solver.so" />
+			<Add library="/opt/ros/groovy/lib/librosbag.so" />
+			<Add library="/opt/ros/groovy/lib/librosconsole_bridge.so" />
+			<Add library="/opt/ros/groovy/lib/libroscpp.so" />
+			<Add library="/opt/ros/groovy/lib/libroscpp_serialization.so" />
+			<Add library="/opt/ros/groovy/lib/libroslib.so" />
+			<Add library="/opt/ros/groovy/lib/librospack.so" />
+			<Add library="/opt/ros/groovy/lib/libxmlrpcpp.so" />
+			<Add library="/usr/local/Aria/lib/libAria.so" />
+			<Add library="/usr/local/lib/Vicon/libViconDataStreamSDK_CPP.so" />
+			<Add library="/usr/lib/x86_64-linux-gnu/libdl.so" />
+			<Add library="/opt/ros/groovy/lib/libtf_conversions.so" />
+			<Add library="/opt/ros/groovy/lib/liborocos-kdl.so" />
+			<Add library="/opt/ros/groovy/lib/libtf.so" />
+			<Add library="/opt/ros/groovy/lib/libtopic_tools.so" />
+			<Add library="/opt/ros/groovy/lib/libconsole_bridge.so" />
+			<Add library="/opt/ros/groovy/lib/libtf2.so" />
+			<Add library="/opt/ros/groovy/lib/libkdl_conversions.so" />
+			<Add library="/opt/ros/groovy/lib/libtf2_ros.so" />
+			<Add library="/opt/ros/groovy/lib/libactionlib.so" />
+			<Add directory="/opt/ros/groovy/lib" />
+			<Add directory="/usr/local/Aria/lib" />
+		</Linker>
+		<Unit filename="include/ArActionKinect.h" />
+		<Unit filename="settings.txt" />
+		<Unit filename="src/ArActionBody.cpp" />
+		<Unit filename="src/ArActionBody.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="src/ArActionCBB.cpp" />
+		<Unit filename="src/ArActionCBB.h" />
+		<Unit filename="src/ArActionKinect.cpp" />
+		<Unit filename="src/ArActionKinect.h" />
+		<Unit filename="src/ArActionMatlab.cpp" />
+		<Unit filename="src/ArActionMatlab.h" />
+		<Unit filename="src/CRobotInfo.cpp" />
+		<Unit filename="src/CRobotInfo.h" />
+		<Unit filename="src/CRuntimeSettings.cpp" />
+		<Unit filename="src/CRuntimeSettings.h" />
+		<Unit filename="src/CSystemData.cpp" />
+		<Unit filename="src/CSystemData.h" />
+		<Unit filename="src/CVector.cpp" />
+		<Unit filename="src/CVector.h" />
+		<Unit filename="src/CoordData.h" />
+		<Unit filename="src/k2_client/Activities.h" />
+		<Unit filename="src/k2_client/Appearance.h" />
+		<Unit filename="src/k2_client/Audio.h" />
+		<Unit filename="src/k2_client/Body.h" />
+		<Unit filename="src/k2_client/BodyArray.h" />
+		<Unit filename="src/k2_client/Expressions.h" />
+		<Unit filename="src/k2_client/JointOrientationAndType.h" />
+		<Unit filename="src/k2_client/JointPositionAndState.h" />
+		<Unit filename="src/k2_client/Lean.h" />
+		<Unit filename="src/k2_client/k2_client.h" />
+		<Unit filename="src/kp_utilities.cpp" />
+		<Unit filename="src/kp_utilities.h" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

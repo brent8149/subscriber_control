@@ -1,0 +1,18 @@
+numrobots = 1
+IP1 = 129.2.177.71
+P1 = 8101
+name1 = Epsilon
+logging = no
+withSonar = yes
+cyclefreq = 50.0
+logpath = /home/kate/Desktop/
+logname = kp_test.txt
+beaconName = Beacon_CONE
+Velocity = 200.0
+mu = 1
+leaderlambda = .5
+alphaNeighbor = 3
+alphaBeacon = 3
+END
+
+
